@@ -1,0 +1,43 @@
+package assignment7;
+
+public class Rectangle extends Shapes {	
+	private static final long serialVersionUID = 1L;
+	private double length = 0.0;
+	private double width = 0.0;
+	
+	public Rectangle() {
+		this.width = 0.0;
+		this.length = 0.0;	
+	}
+	
+	public Rectangle(double width, double length) {
+		this.width = width;
+		this.length = length;
+	}
+	
+	public void setWidth(double width) {
+		this.width = width;
+	}
+	
+	public double getWidth() {
+		return this.width;
+	}
+		
+	public void setLength(double length) {
+		this.length = length;
+	}
+	
+	public double getLength() {
+		return this.length;
+	}
+	
+	@Override
+	public String toString() {
+		return "Rectangle with an area of " + this.area;
+	}
+	
+	public void calculateArea() {
+		this.area = this.width * this.length;
+	}
+	
+}
