@@ -2,23 +2,18 @@ package assignment7;
 
 import java.io.Serializable;
 
-/**
- * Shapes abstract class
- */
+
 public abstract class Shapes implements ShapesRelate, Serializable {
 	protected double area;
 	
-	/**
-	 * Default constructor
-	 */
 	public Shapes() {
 		
 	}
 	
 	
 	/**
-	 * Gets the area of the Shape
-	 * @return area as double
+	 * 
+	 * @return
 	 */
 	public double getArea() {
 		return this.area;
@@ -26,13 +21,13 @@ public abstract class Shapes implements ShapesRelate, Serializable {
 	
 	
 	/**
-	 * Calculates the area of the shape
+	 * calculateArea abstract method
 	 */
 	public abstract void calculateArea();
 	
 	
 	/**
-	 * method to compare this shape's area with other shape.
+	 * compareShapes method to compare this shape with other shape.
 	 * Based on the Java compareTo method.
 	 * return 0 if the objects are the same area.
 	 * return -1 if this object's area is less than the other.
@@ -53,4 +48,4 @@ public abstract class Shapes implements ShapesRelate, Serializable {
 		return 0; 
 	}
 
-} // end of Shapes class
+}

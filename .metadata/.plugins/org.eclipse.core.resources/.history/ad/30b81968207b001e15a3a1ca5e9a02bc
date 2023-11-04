@@ -2,9 +2,7 @@ package assignment7;
 
 import java.io.Serializable;
 
-/**
- * Shapes abstract class
- */
+
 public abstract class Shapes implements ShapesRelate, Serializable {
 	protected double area;
 	
@@ -53,4 +51,4 @@ public abstract class Shapes implements ShapesRelate, Serializable {
 		return 0; 
 	}
 
-} // end of Shapes class
+}

@@ -7,25 +7,18 @@ import java.io.ObjectOutputStream;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
 
-/**
- * ShapesDriver class
- */
 public class ShapesDriver {
 	
 	public static void main(String[]args) {
-	
-		// creates an ArrayList of type Shapes 
 		ArrayList<Shapes> shapes = new ArrayList<Shapes>();
-	
+		
 		shapes.add(new Rectangle(20,40));
 		shapes.add(new Circle(34));
 		shapes.add(new Rectangle(35,66));
 		shapes.add(new Circle(234));
 		shapes.add(new Rectangle(234,53));
 		shapes.add(new Circle(25));
-
 		
-		//Find the largest Shape
 		Shapes theLargestShape = largestShape(shapes);
 		
 		System.out.println("The Largest shape is: " + theLargestShape);
@@ -34,9 +27,6 @@ public class ShapesDriver {
 			
 		
 		String fileName = "Shapes.dat";
-		
-		// Serialize the Shapes, if that is successful
-		// then de-serialize the Shapes and output them
 		
 		if(SerializeShapesList(shapes, fileName)) {
 			List<Shapes> deSerializedShapesList = DeSerializeShapesList(fileName);
@@ -50,10 +40,9 @@ public class ShapesDriver {
 			
 		}				
 		
-	} // end of main method
+	}
 	
 	
-		
 	/**
 	 * Method to find the largest Shape
 	 * @param list of Shapes
@@ -72,8 +61,7 @@ public class ShapesDriver {
 		}
 		
 		return largestShape;
-		
-	} //end of largestShape method 
+	}
 	
 	/**
 	 * Method to serialize a List of Shapes
@@ -100,11 +88,11 @@ public class ShapesDriver {
 		}		
 		
 		return true;
-	} // end of SerializeShapesList method
+	}
 	
 	
 	/**
-	 * Method to de-serialize a Shapes List from a given filename
+	 * Method to deserialize a Shapes List from a given filename
 	 * @param fileName as String
 	 * @return List of Shapes
 	 */
@@ -129,6 +117,6 @@ public class ShapesDriver {
 		}		
 		
 		return list;
-	} // end of DeSerializeShapesList method
+	}
 
-} // end of ShapesDriver class
+}
