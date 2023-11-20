@@ -17,12 +17,12 @@ public class ShapesDriver {
 		// creates an ArrayList of type Shapes 
 		ArrayList<Shapes> shapes = new ArrayList<Shapes>();
 	
-		shapes.add(new Rectangle(20,40));
-		shapes.add(new Circle(34));
-		shapes.add(new Rectangle(35,66));
-		shapes.add(new Circle(234));
-		shapes.add(new Rectangle(234,53));
-		shapes.add(new Circle(25));
+		shapes.add(new Rectangle(20, 17));
+		shapes.add(new Circle(10));
+		shapes.add(new Rectangle(35, 18));
+		shapes.add(new Circle(9));
+		shapes.add(new Rectangle(12, 15));
+		shapes.add(new Circle(12));
 
 		
 		//Find the largest Shape
@@ -39,7 +39,8 @@ public class ShapesDriver {
 		// then de-serialize the Shapes and output them
 		
 		if(SerializeShapesList(shapes, fileName)) {
-			List<Shapes> deSerializedShapesList = DeSerializeShapesList(fileName);
+			List<Shapes> deSerializedShapesList = 
+					DeSerializeShapesList(fileName);
 			
 			System.out.println("Deserialized Shapes: ");
 			System.out.println("==================== ");
@@ -81,7 +82,8 @@ public class ShapesDriver {
 	 * @param fileName as string
 	 * @return Boolean indicating success of serialization operation
 	 */
-	public static Boolean SerializeShapesList(List<Shapes> list, String fileName) {
+	public static Boolean SerializeShapesList(List<Shapes> list, 
+			String fileName) {
 		
 		try {
 			

@@ -63,7 +63,13 @@ public class Rectangle extends Shapes {
 	 */
 	@Override
 	public String toString() {
-		return "Rectangle with an area of " + this.area;
+		
+		return "Rectangle with a width of " + 
+			String.format("%,.2f", this.width) + 
+			"cm, a length of " + 
+			String.format("%,.2f", this.length) + 
+			"cm and an area of " + 
+			String.format("%,.2f", this.area) + "cm\u00B2.";
 	}
 	
 	

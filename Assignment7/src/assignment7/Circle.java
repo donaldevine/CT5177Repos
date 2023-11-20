@@ -52,7 +52,11 @@ public class Circle extends Shapes {
 	 */
 	@Override 
 	public String toString() {
-		return "Circle with area of " + this.area;
+		 
+		return "Circle with a radius of " + 
+				String.format("%,.2f", this.radius) + 
+				"cm and an area of " + 
+				String.format("%,.2f", this.area) + "cm\u00B2.";
 	}
 	
 } // end of Circle class
