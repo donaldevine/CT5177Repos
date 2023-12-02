@@ -9,6 +9,8 @@ public class Tester {
 		
 		personCollection.addPerson(new Person("Joe Bloggs", 91, "joe@bloggs.com"));		
 		personCollection.addPerson(new Person("Jane Bloggs", 93, "jane@bloggs.com"));
+		personCollection.addPerson(new Person("Satoshi Nakamoto", 14, "satoshi@bitcoin.com"));
+		personCollection.addPerson(new Person("Michael Saylor", 102, "michael@saylor.com"));
 		
 		FileSerilizationDeserialization<Person> f = new FileSerilizationDeserialization<Person>();
 		
