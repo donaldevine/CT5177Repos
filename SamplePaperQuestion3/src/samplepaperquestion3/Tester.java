@@ -25,6 +25,12 @@ public class Tester {
 			System.out.println(listIterator.next());
 		}
 		
+		class SortById implements Comparator<Company.Employee> {
+			public int compare(Company.Employee a, Company.Employee b) {
+				return (int)a.getID() - (int)b.getID();
+			}
+		}
+		
 		Collections.sort(employees, new SortById());
 		
 		for(Company.Employee e: employees) {
